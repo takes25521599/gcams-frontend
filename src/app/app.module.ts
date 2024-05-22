@@ -43,6 +43,12 @@ import { AdminMainComponent } from './user/admin/admin-main/admin-main.component
     StudentDashboardComponent,
     
     AdminMainComponent,
+    AdminSidenavComponent,
+    AdminDashboardComponent,
+    AdminInstructorsComponent,
+    AdminStudentsComponent,
+    AdminAddUsersComponent,
+    
   ],
   imports: [
     BrowserModule,
