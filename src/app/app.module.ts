@@ -25,7 +25,11 @@ import { StudentDashboardComponent } from './user/student/student-dashboard/stud
 
 // Admin
 import { AdminMainComponent } from './user/admin/admin-main/admin-main.component';
-
+import { AdminSidenavComponent } from './user/admin/admin-sidenav/admin-sidenav.component';
+import { AdminDashboardComponent } from './user/admin/admin-dashboard/admin-dashboard.component';
+import { AdminInstructorsComponent } from './user/admin/admin-instructors/admin-instructors.component';
+import { AdminStudentsComponent } from './user/admin/admin-students/admin-students.component';
+import { AdminAddUsersComponent } from './user/admin/admin-add-users/admin-add-users.component';
 
 @NgModule({
   declarations: [
