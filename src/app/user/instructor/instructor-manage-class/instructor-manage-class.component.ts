@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-manage-class',
-  templateUrl: './manage-class.component.html',
-  styleUrl: './manage-class.component.css'
+  selector: 'app-instructor-manage-class',
+  templateUrl: './instructor-manage-class.component.html',
+  styleUrl: './instructor-manage-class.component.css'
 })
-export class ManageClassComponent {
+export class InstructorManageClassComponent {
   
   classes : any = [
     {
