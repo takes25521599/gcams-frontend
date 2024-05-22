@@ -3,11 +3,11 @@ import { AppComponent } from '../../../app.component';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-instructor-sidenav',
-  templateUrl: './instructor-sidenav.component.html',
-  styleUrl: './instructor-sidenav.component.css'
+  selector: 'app-sidenav',
+  templateUrl: './sidenav.component.html',
+  styleUrl: './sidenav.component.css'
 })
-export class InstructorSidenavComponent {
+export class SidenavComponent {
   app = new AppComponent();
   time = this.app.currTime;
   date = this.app.currDate;

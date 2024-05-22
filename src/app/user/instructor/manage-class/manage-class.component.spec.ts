@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminMainComponent } from './admin-main.component';
+import { ManageClassComponent } from './manage-class.component';
 
-describe('AdminMainComponent', () => {
-  let component: AdminMainComponent;
-  let fixture: ComponentFixture<AdminMainComponent>;
+describe('ManageClassComponent', () => {
+  let component: ManageClassComponent;
+  let fixture: ComponentFixture<ManageClassComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AdminMainComponent]
+      declarations: [ManageClassComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AdminMainComponent);
+    fixture = TestBed.createComponent(ManageClassComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,31 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
-import { InstructorMainComponent } from './user/instructor/instructor-main/instructor-main.component';
-import { InstructorDashboardComponent } from './user/instructor/instructor-dashboard/instructor-dashboard.component';
-import { InstructorManageClassComponent } from './user/instructor/instructor-manage-class/instructor-manage-class.component';
-import { InstructorViewClassComponent } from './user/instructor/instructor-view-class/instructor-view-class.component';
-import { InstructorSidenavComponent } from './user/instructor/instructor-sidenav/instructor-sidenav.component';
-import { StudentMainComponent } from './user/student/student-main/student-main.component';
-import { StudentDashboardComponent } from './user/student/student-dashboard/student-dashboard.component';
-import { AdminMainComponent } from './user/admin/admin-main/admin-main.component';
+import { InstructorComponent } from './user/instructor/instructor.component';
+import { InstructorDashboardComponent } from './user/instructor/dashboard/dashboard.component';
+import { ManageClassComponent } from './user/instructor/manage-class/manage-class.component';
+import { ViewClassComponent } from './user/instructor/view-class/view-class.component';
+import { SidenavComponent } from './user/instructor/sidenav/sidenav.component';
+import { StudentComponent } from './user/student/student.component';
+import { StudentDashboardComponent } from './user/student/dashboard/dashboard.component';
 
 
 
 export const routes: Routes = [
   {path: 'menu', component: NavComponent,
     children: [
-      {path: 'instructor', component: InstructorMainComponent,
+      {path: 'instructor', component: InstructorComponent,
         children: [
           {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
           {path: 'dashboard', component: InstructorDashboardComponent},
-          {path: 'manage-class', component: InstructorManageClassComponent},
-          {path: 'manage-class/view-class', component: InstructorViewClassComponent}
+          {path: 'manage-class', component: ManageClassComponent},
+          {path: 'manage-class/view-class', component: ViewClassComponent}
         ]
       },
-      {path: 'student', component: StudentMainComponent},
-
-      {path: 'admin', component: AdminMainComponent},
+      {path:'student', component: StudentComponent}
     ]
   },
 ];

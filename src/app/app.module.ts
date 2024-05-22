@@ -6,43 +6,28 @@ import { AppComponent } from './app.component';
 import { CommonModule, NgFor } from '@angular/common';
 import { RouterLinkActive, RouterModule, RouterLink, RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
-
-// General Component
 import { NavComponent } from './nav/nav.component';
+import { InstructorComponent } from './user/instructor/instructor.component';
+import { InstructorDashboardComponent } from './user/instructor/dashboard/dashboard.component';
+import { ManageClassComponent } from './user/instructor/manage-class/manage-class.component';
+import { ViewClassComponent } from './user/instructor/view-class/view-class.component';
+import { SidenavComponent } from './user/instructor/sidenav/sidenav.component';
+import { StudentComponent } from './user/student/student.component';
+import { StudentDashboardComponent } from './user/student/dashboard/dashboard.component';
 
-// User Components:
-
-// Instructor
-import { InstructorMainComponent } from './user/instructor/instructor-main/instructor-main.component';
-import { InstructorSidenavComponent } from './user/instructor/instructor-sidenav/instructor-sidenav.component';
-import { InstructorDashboardComponent } from './user/instructor/instructor-dashboard/instructor-dashboard.component';
-import { InstructorManageClassComponent } from './user/instructor/instructor-manage-class/instructor-manage-class.component';
-import { InstructorViewClassComponent } from './user/instructor/instructor-view-class/instructor-view-class.component';
-
-// Student
-import { StudentMainComponent } from './user/student/student-main/student-main.component';
-import { StudentDashboardComponent } from './user/student/student-dashboard/student-dashboard.component';
-
-// Admin
-import { AdminMainComponent } from './user/admin/admin-main/admin-main.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
-    NavComponent,
-
-    InstructorMainComponent,
-    InstructorSidenavComponent,
+    InstructorComponent,
     InstructorDashboardComponent,
-    InstructorManageClassComponent,
-    InstructorViewClassComponent,
-
-    StudentMainComponent,
+    ManageClassComponent,
+    ViewClassComponent,
+    StudentComponent,
+    NavComponent,
+    SidenavComponent,
     StudentDashboardComponent,
-    
-    AdminMainComponent,
   ],
   imports: [
     BrowserModule,
