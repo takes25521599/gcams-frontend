@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class StudentDashboardComponent {
   myClasses = [
     {
-      name: 'Class 1',
+      name: 'Application Development and Emerging Technologies (LAB)',
       classCode: 'Code 1',
       time: '7:00 AM - 10:00 AM',
       roomNo: '510'
