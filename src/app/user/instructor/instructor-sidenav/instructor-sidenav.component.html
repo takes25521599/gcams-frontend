@@ -1,6 +1,7 @@
 <section>
     <div class="
     flex 
+    min-h-[calc(100dvh-3rem)]
     max-h-[calc(100dvh-3rem)] 
     bg-gradient-to-br 
     from-green-200/60 
@@ -13,7 +14,7 @@
             shadow-gray-300
             shadow-lg
             rounded-br-3xl
-            h-full
+            min-h-full
             w-60 
             text-base 
             py-7
@@ -35,23 +36,24 @@
             <span class="text-black font-bold">Instructor</span>
             <span class="text-gray-500 text-sm pt-3">{{ time }}</span>
             <span class="text-gray-500 text-sm">{{ date }} | {{ day }}</span>
-                <div class="flex flex-col gap-2 mt-8">
+                <div class="flex flex-col mt-8">
+                <div 
+                class="
+                flex
+                items-center
+                ">
                 <span autofocus [ngClass]="this.router.url === '/menu/instructor/dashboard' ? 
-                'bg-cyan-700 text-white rounded-2xl' : ''" 
+                'text-cyan-700' : ''" 
                 class="
                 flex 
                 items-center 
+                w-full
                 gap-2 
-                p-3
+                px-4 py-2
                 text-sm
                 text-gray-500
                 hover:cursor-pointer
-                hover:text-white
-                hover:bg-cyan-700
-                hover:rounded-2xl
-                active:text-white
-                active:bg-cyan-900
-                active:rounded-2xl
+                hover:text-cyan-900
                 focus:outline-none" 
                 routerLink="dashboard" 
                 routerLinkActive="active" 
@@ -59,28 +61,49 @@
                 <mat-icon>event</mat-icon>
                 Dashboard
                 </span>
+                <span autofocus [ngClass]="this.router.url === '/menu/instructor/dashboard' ? 
+                'bg-green-400' : 'bg-slate-400'"
+                class="
+                w-4
+                ml-auto
+                h-[35%]
+                rounded-full">
+                </span>
+                </div>
+                <div 
+                class="
+                flex
+                items-center
+                ">
                 <span 
                 [ngClass]="this.router.url === '/menu/instructor/manage-class' ? 
-                'bg-cyan-700 text-white rounded-2xl' : ''"
+                'text-cyan-700' : ''"
                 class="
                 flex 
                 items-center 
+                w-full
                 gap-2
-                p-3
+                px-4 py-2
                 text-sm
                 text-gray-500
-                hover:text-white
-                hover:bg-cyan-700
-                hover:rounded-2xl
-                active:text-white
-                active:bg-cyan-900
-                active:rounded-2xl"
+                hover:text-cyan-900
+                hover:cursor-pointer
+                focus:outline-none"
                 routerLink="manage-class"
                 routerLinkActive="active" 
                 ariaCurrentWhenActive="page">
                 <mat-icon>folder_open</mat-icon>
                 Manage Class
                 </span>
+                <span autofocus [ngClass]="this.router.url === '/menu/instructor/manage-class' ? 
+                'bg-green-400' : 'bg-slate-400'"
+                class="
+                w-4
+                ml-auto
+                h-[35%]
+                rounded-full">
+                </span>
+                </div>
                 </div>
             </div>
             <div class="mt-8 flex flex-col gap-2">
@@ -90,15 +113,7 @@
             items-center 
             gap-2 
             p-3 px-8
-            bg-slate-500/80
-            rounded-3xl
-            text-sm
-            text-white
-            shadow-gray-300
-            shadow-md
-            hover:bg-red-500
-            active:bg-red-700
-            active:rounded-3xl">
+            button">
             <mat-icon>exit_to_app</mat-icon>
             Log Out
             </button>
