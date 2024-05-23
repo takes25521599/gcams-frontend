@@ -30,50 +30,37 @@
             drop-shadow-xl" 
             src="assets/images/sins.jpg" 
             alt="avatar">
-            <div class="flex flex-col md:w-full items-center md:items-start mx-5 md:mx-2 my-2 md:mt-0">
+            <div class="flex flex-col md:w-full items-center md:items-start mx-5 md:mx-2 my-2">
                 <h1 class="text-xl font-bold text-gray-800">
-                    Johnny Makasalanan
+                    Johnny Makasalanan <mat-icon class="text-md mt-2 self-center">edit</mat-icon>
                 </h1>
-                <p class="flex flex-col md:flex-row items-center w-full text-gray-600 text-center">
+                <p class="text-gray-600 text-center">
                     Bachelor of Science in Computer Science
-                    <span 
-                    class="
-                    mt-4 mb-2 
-                    md:m-0 
-                    px-2 py-1 
-                    md:ml-auto 
-                    flex 
-                    items-center 
-                    gap-2 
-                    border-2 
-                    border-black 
-                    rounded-lg
-                    hover:text-white
-                    hover:bg-slate-500 
-                    hover:border-white"
-                    ><mat-icon class="text-md">edit</mat-icon>Edit Profile</span>
                 </p>
             </div>
             <div class="flex grow md:rounded-2xl md:w-full bg-slate-50/60 p-3 m-2">
-                <p class="text-md text-semibold">You've been present for: 230 days 😁</p>
+                <p class="text-md text-semibold">You've been present for: 230 days</p>
             </div>
             <div class="flex grow md:rounded-2xl md:w-full bg-slate-50/60 p-3 m-2">
-                <p class="text-md text-semibold">You've been absent for: 8 days 😓</p>
+                <p class="text-md text-semibold">You've been absent for: 8 days</p>
             </div>
             <h1 class="text-[#004E49] md:m-2 my-4 text-2xl font-bold">My Classes</h1>
-            <button class="
+            <p class="
             md:ml-12
             md:m-2
             px-5 py-3 
+            bg-cyan-700 
             flex 
             items-center 
             gap-2
-            button">
+            text-white 
+            font-bold 
+            rounded-3xl">
             <mat-icon>
             event
             </mat-icon>
             Class Schedule
-            </button>
+            </p>
             <div class="flex items-center whitespace-nowrap md:w-full md:x md:m-2 w-[350px] h-[260px] overflow-x-auto overflow-y-hidden">
             <div *ngFor="let class of myClasses; index as i;" 
             class="m-3">
@@ -92,30 +79,14 @@
                 <p class="text-wrap text-white">{{ class.name }}</p>
                 <p class="text-white">{{ class.time }}</p>
                 <p class="text-white">{{ class.roomNo }}</p>
-                <button 
-                class="
-                float-end 
-                p-2 
-                button"
-                >
-                View Class Attendance
-                </button>
+                <button class="float-end p-2 rounded-l-full text-white bg-cyan-700 hover:bg-cyan-900">View Class Attendance</button>
                 </div>
                 </div>
             </div>
             </div>
-            <button 
-            class=" 
-            flex 
-            items-center 
-            gap-2 
-            m-3 
-            px-6 py-2 
-            button
-            md:ml-auto"
-            >
-            <mat-icon>exit_to_app</mat-icon>
-            Log out
+            <button class="md:ml-auto flex items-center gap-2 m-3 px-6 py-2 text-white bg-gradient-to-br from-cyan-700/80 to-indigo-600/80 rounded-full">
+                <mat-icon>exit_to_app</mat-icon>
+                Log out
             </button>
             </div>
             </div>
