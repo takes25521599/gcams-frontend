@@ -103,6 +103,40 @@
                 rounded-full
                 ">
                 </div>
+                <div 
+                class="
+                flex
+                items-center
+                ">
+                <span
+                [ngClass]="this.router.url === '/menu/admin/write' ? 
+                'text-cyan-700' : ''"
+                class="
+                flex 
+                items-center 
+                w-full
+                gap-2
+                px-4 py-2
+                text-sm
+                text-gray-500
+                hover:text-cyan-900
+                hover:cursor-pointer
+                focus:outline-none"
+                routerLink="register"
+                routerLinkActive="active" 
+                ariaCurrentWhenActive="page">
+                <mat-icon>folder_open</mat-icon>
+                Register
+                </span>
+                <hr autofocus [ngClass]="this.router.url === '/menu/admin/register' ? 
+                'bg-green-400' : 'bg-slate-400'"
+                class="
+                w-4
+                ml-auto
+                h-[15px]
+                rounded-full
+                ">
+                </div>
                 </div>
             </div>
             <div class="mt-8 flex flex-col gap-2">

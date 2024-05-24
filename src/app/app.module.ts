@@ -31,6 +31,7 @@ import { AdminInstructorsComponent } from './user/admin/admin-instructors/admin-
 import { AdminStudentsComponent } from './user/admin/admin-students/admin-students.component';
 import { AdminAddUsersComponent } from './user/admin/admin-add-users/admin-add-users.component';
 import { AdminWriteComponent } from './user/admin/admin-write/admin-write.component';
+import { AdminRegisterComponent } from './user/admin/admin-register/admin-register.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { AdminWriteComponent } from './user/admin/admin-write/admin-write.compon
     AdminStudentsComponent,
     AdminAddUsersComponent,
     AdminWriteComponent,
+    AdminRegisterComponent,
     
   ],
   imports: [

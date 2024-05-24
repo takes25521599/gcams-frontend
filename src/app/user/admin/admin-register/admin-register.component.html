@@ -1,0 +1,156 @@
+<div class="flex justify-center flex-wrap gap-4 mt-10 m-auto p-5 size-[80%] bg-slate-50/40 backdrop-blur-sm rounded-xl">
+    <h1 class="mb-5 text-center text-xl text-[#004E49] font-bold w-full">Register</h1>
+    <div class="w-[45%]">
+    <label for="first_name" class="block mb-1 text-sm font-bold text-gray-950"
+    >First Name</label
+    >
+    <input
+    type="text"
+    id="first_name"
+    formControlName="first_name"
+    [ngClass]="{
+      'border-red-600/60 outline-red-600/60':''
+    }"
+    class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+    placeholder="e.g. Juan"
+    />
+    </div>
+    <div class="w-[45%]">
+    <label for="last_name" class="block mb-1 text-sm font-bold text-gray-950"
+    >Last Name</label
+    >
+    <input
+    type="text"
+    id="last_name"
+    formControlName="last_name"
+    [ngClass]="{
+      'border-red-600/60 outline-red-600/60':''
+    }"
+    class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+    placeholder="e.g. Dela Cruz"
+    />
+    </div>
+    <div class="w-[45%]">
+    <label for="email" class="block mb-1 text-sm font-bold text-gray-950"
+      >Email</label
+    >
+    <input
+      type="email"
+      id="email"
+      formControlName="email"
+      [ngClass]="{
+        'border-red-600/60 outline-red-600/60':''
+      }"
+      class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+      placeholder="2022*****"
+    />
+    </div>
+    <div class="w-[45%]">
+    <label for="sex" class="block mb-1 text-sm font-bold text-gray-950"
+    >Sex</label
+    >
+    <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <option disabled selected value="">Male or Female</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+    </select>
+    </div>
+    <div class="w-[45%]">
+    <label for="role" class="block mb-1 text-sm font-bold text-gray-950"
+    >Role</label
+    >
+    <select (change)="getRole(getValue($event))" class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <option disabled selected value="">Select a role</option>
+        <option value="student">Student</option>
+        <option value="instructor">Instructor</option>
+        <option value="admin">Admin</option>
+    </select>
+    </div>
+
+    @if (role === 'student') {
+        <div class="w-[45%]">
+        <label for="program" class="block mb-1 text-sm font-bold text-gray-950"
+        >Program</label
+        >
+        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+            <option disabled selected value="">Choose your program</option>
+            <option value="bscs">BSCS</option>
+            <option value="bsit">BSIT</option>
+            <option value="bsemc">BSEMC</option>
+        </select>
+        </div>
+        <div class="w-[45%]">
+        <label for="year" class="block mb-1 text-sm font-bold text-gray-950"
+        >Year</label
+        >
+        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+            <option disabled selected value="">Choose your year</option>
+            <option value="1">1st year</option>
+            <option value="2">2nd year</option>
+            <option value="3">3nd year</option>
+            <option value="4">4th year</option>
+        </select>
+        </div>
+        <div class="w-[45%]">
+        <label for="block" class="block mb-1 text-sm font-bold text-gray-950"
+        >Block</label
+        >
+        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+            <option disabled selected value="">Choose your block</option>
+            <option value="A">Block A</option>
+            <option value="B">Block B</option>
+            <option value="C">Block C</option>
+            <option value="D">Block D</option>
+            <option value="E">Block E</option>
+        </select>
+        </div>
+    }
+    @if (role === 'instructor') {
+        <div class="w-[45%]">
+        <label for="department" class="block mb-1 text-sm font-bold text-gray-950"
+        >Department</label
+        >
+        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+            <option disabled selected value="">Choose your department</option>
+            <option value="ccs">CCS</option>
+            <option value="ceas">CEAS</option>
+        </select>
+        </div>
+        <div class="w-[45%]">
+        <label for="position" class="block mb-1 text-sm font-bold text-gray-950"
+        >Position</label
+        >
+        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+            <option disabled selected value="">Choose your position</option>
+            <option value="coordinator">Program Coordinator</option>
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+        </select>
+        </div>
+    }
+    @if (role === 'admin') {
+        <div class="w-[45%]">
+        <label for="department" class="block mb-1 text-sm font-bold text-gray-950"
+        >Department</label
+        >
+        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+            <option disabled selected value="">Choose your department</option>
+            <option value="ccs">CCS</option>
+            <option value="ceas">MIS</option>
+            <option value="ceas">REGIST</option>
+        </select>
+        </div>
+        <div class="w-[45%]">
+        <label for="position" class="block mb-1 text-sm font-bold text-gray-950"
+        >Position</label
+        >
+        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+            <option disabled selected value="">Choose your position</option>
+            <option value="system_ad">System Administrator</option>
+            <option value="assistant_ad">Assistant Administrator</option>
+            <option value="registrar">Registrar</option>
+        </select>
+        </div>
+    }
+    <input type="submit" name="submit" class="button w-full mx-40 p-2.5"/>
+</div>

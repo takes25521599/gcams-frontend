@@ -1,16 +1,16 @@
-<div class="m-[25%] p-5 size-[calc([full]-25%)] bg-slate-50/40 backdrop-blur-sm rounded-xl">
+<div class="m-[20%] p-5 size-[calc([full]-30%)] bg-slate-50/40 backdrop-blur-sm rounded-xl">
     <h1 class="text-center text-xl text-[#004E49] font-bold">Write RFID</h1>
     <label for="student_id" class="block mb-1 text-sm font-bold text-gray-950"
       >Student No.</label
     >
     <input
-      type="email"
-      id="email"
-      formControlName="email"
+      type="text"
+      id="student_id"
+      formControlName="student_id"
       [ngClass]="{
         'border-red-600/60 outline-red-600/60':''
       }"
-      class="bg-gray-50/60 rounded-md text-gray-950 outline-teal-900 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+      class="bg-gray-50/60 rounded-md text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
       placeholder="2022*****"
     />
     <input type="submit" name="submit" class="button mt-5 p-2.5 w-full">
