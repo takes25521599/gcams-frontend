@@ -1,1 +1,41 @@
-<p>view-class works!</p>
+<section>
+    <div class="bg-gradient-to-br from-green-200/60 to-indigo-300/60 min-h-dvh">
+        <div class="w-[375px] md:w-[80%]">
+        <div 
+        class="
+        flex 
+        flex-wrap 
+        items-center 
+        w-full h-full
+        bg-slate-50/40 
+        backdrop-blur-sm 
+        shadow-lg 
+        shadow-slate-300 
+        rounded-3xl
+        ">
+            <h1 class="text-3xl text-[#004E49] font-bold">Class Attendance</h1>
+            <hr class="bg-gray-500 w-full">
+            <table class="m-2 border-spacing-3 table-auto w-full">
+
+                <tr class="text-sm">
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Date</th>
+                    <th>Time Sched</th>
+                    <th>Time In</th>
+                    <th>Status</th>
+                </tr>
+                <tr *ngFor="let item of attendance; index as i;" [ngClass]=" i % 2 === 0 ? 'bg-slate-300/50' : ''"
+                class="text-sm">
+                    <td>{{ item.lastName }}</td>
+                    <td>{{ item.firstName }}</td>
+                    <td>{{ item.date }}</td>
+                    <td>{{ item.timeSched }}</td>
+                    <td>{{ item.timeIn }}</td>
+                    <td>{{ item.status }}</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+</section>

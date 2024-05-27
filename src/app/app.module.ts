@@ -56,7 +56,6 @@ import { AdminRegisterComponent } from './user/admin/admin-register/admin-regist
     AdminAddUsersComponent,
     AdminWriteComponent,
     AdminRegisterComponent,
-    
   ],
   imports: [
     BrowserModule,
