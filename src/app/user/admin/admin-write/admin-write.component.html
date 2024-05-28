@@ -1,17 +1,87 @@
-<div class="m-[20%] p-5 size-[calc([full]-30%)] bg-slate-50/40 backdrop-blur-sm rounded-xl">
-    <h1 class="text-center text-xl text-[#004E49] font-bold">Write RFID</h1>
-    <label for="student_id" class="block mb-1 text-sm font-bold text-gray-950"
-      >Student No.</label
-    >
-    <input
-      type="text"
-      id="student_id"
-      formControlName="student_id"
-      [ngClass]="{
-        'border-red-600/60 outline-red-600/60':''
-      }"
-      class="bg-gray-50/60 rounded-md text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
-      placeholder="2022*****"
-    />
-    <input type="submit" name="submit" class="button mt-5 p-2.5 w-full">
+<div 
+class="
+w-[375px] md:w-[80%]
+m-auto
+">
+
+<div 
+class="flex 
+flex-wrap 
+items-center 
+w-full h-full
+bg-slate-50/40
+backdrop-blur-sm  
+my-5 
+border-t-4
+border-b-4
+border-cyan-700
+shadow-lg 
+shadow-slate-300
+rounded-xl
+">
+
+<div
+class="
+flex
+flex-col
+bg-[url(assets/images/CARD_BG.png)]
+bg-center
+bg-no-repeat
+bg-cover
+w-full
+h-40
+mb-5
+border-b-2
+border-slate-50
+rounded-t-lg
+rounded-br-lg
+md:mb-10
+md:border-b-4
+">
+<div
+class="
+h-12
+bg-slate-50
+text-cyan-600
+py-2
+pl-10 pr-5
+flex
+items-center
+gap-5
+justify-between
+mt-auto mr-auto
+text-xl
+border-t-4
+border-cyan-700
+rounded-tr-2xl
+md:text-2xl
+md:gap-28
+md:rounded-tr-lg
+">
+<h1
+class="
+font-bold
+">
+Write RFID
+</h1>
+<mat-icon>person_add</mat-icon>
+</div>
+</div>
+
+<label for="student_id" class="block mb-1 text-sm font-bold text-gray-950"
+>Student No.</label
+>
+<input
+type="text"
+id="student_id"
+formControlName="student_id"
+[ngClass]="{
+'border-red-600/60 outline-red-600/60':''
+}"
+class="bg-gray-50/60 rounded-md text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+placeholder="2022*****"
+/>
+<input type="submit" name="submit" class="button mt-5 p-2.5 w-full">
+</div>
+
 </div>
