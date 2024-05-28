@@ -1,5 +1,6 @@
-<div class="flex justify-center flex-wrap gap-4 mt-10 m-auto p-5 size-[80%] bg-slate-50/40 backdrop-blur-sm rounded-xl">
+<div class="mt-5 m-auto p-5 size-[80%] bg-slate-50/40 backdrop-blur-sm rounded-xl">
     <h1 class="mb-5 text-center text-xl text-[#004E49] font-bold w-full">Register</h1>
+    <form class="flex justify-center flex-wrap gap-4" method="post">
     <div class="w-[45%]">
     <label for="first_name" class="block mb-1 text-sm font-bold text-gray-950"
     >First Name</label
@@ -11,7 +12,7 @@
     [ngClass]="{
       'border-red-600/60 outline-red-600/60':''
     }"
-    class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+    class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
     placeholder="e.g. Juan"
     />
     </div>
@@ -26,7 +27,7 @@
     [ngClass]="{
       'border-red-600/60 outline-red-600/60':''
     }"
-    class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+    class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
     placeholder="e.g. Dela Cruz"
     />
     </div>
@@ -41,7 +42,7 @@
       [ngClass]="{
         'border-red-600/60 outline-red-600/60':''
       }"
-      class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+      class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
       placeholder="userid@gordoncollege.edu.ph"
     />
     </div>
@@ -49,7 +50,7 @@
     <label for="sex" class="block mb-1 text-sm font-bold text-gray-950"
     >Sex</label
     >
-    <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+    <select class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
         <option disabled selected value="">Male or Female</option>
         <option value="M">Male</option>
         <option value="F">Female</option>
@@ -59,7 +60,7 @@
     <label for="role" class="block mb-1 text-sm font-bold text-gray-950"
     >Role</label
     >
-    <select (change)="getRole(getValue($event))" class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+    <select (change)="getRole(getValue($event))" class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
         <option disabled selected value="">Select a role</option>
         <option value="student">Student</option>
         <option value="instructor">Instructor</option>
@@ -72,7 +73,7 @@
         <label for="program" class="block mb-1 text-sm font-bold text-gray-950"
         >Program</label
         >
-        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <select class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
             <option disabled selected value="">Choose your program</option>
             <option value="bscs">BSCS</option>
             <option value="bsit">BSIT</option>
@@ -83,7 +84,7 @@
         <label for="year" class="block mb-1 text-sm font-bold text-gray-950"
         >Year</label
         >
-        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <select class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
             <option disabled selected value="">Choose your year</option>
             <option value="1">1st year</option>
             <option value="2">2nd year</option>
@@ -95,7 +96,7 @@
         <label for="block" class="block mb-1 text-sm font-bold text-gray-950"
         >Block</label
         >
-        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <select class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
             <option disabled selected value="">Choose your block</option>
             <option value="A">Block A</option>
             <option value="B">Block B</option>
@@ -110,7 +111,7 @@
         <label for="department" class="block mb-1 text-sm font-bold text-gray-950"
         >Department</label
         >
-        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <select class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
             <option disabled selected value="">Choose your department</option>
             <option value="ccs">CCS</option>
             <option value="ceas">CEAS</option>
@@ -120,7 +121,7 @@
         <label for="position" class="block mb-1 text-sm font-bold text-gray-950"
         >Position</label
         >
-        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <select class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
             <option disabled selected value="">Choose your position</option>
             <option value="coordinator">Program Coordinator</option>
             <option value="full-time">Full-time</option>
@@ -133,7 +134,7 @@
         <label for="department" class="block mb-1 text-sm font-bold text-gray-950"
         >Department</label
         >
-        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <select class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
             <option disabled selected value="">Choose your department</option>
             <option value="ccs">CCS</option>
             <option value="ceas">MIS</option>
@@ -144,7 +145,7 @@
         <label for="position" class="block mb-1 text-sm font-bold text-gray-950"
         >Position</label
         >
-        <select class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
+        <select class="bg-gray-50/60 rounded-md mb-5 text-sm text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-3">
             <option disabled selected value="">Choose your position</option>
             <option value="system_ad">System Administrator</option>
             <option value="assistant_ad">Assistant Administrator</option>
@@ -152,5 +153,9 @@
         </select>
         </div>
     }
-    <button class="flex justify-center items-center gap-2 button w-full mx-44 p-2.5"><mat-icon>save_alt</mat-icon>Submit</button>
+    <span class="flex justify-center items-center gap-2 button text-sm w-full mx-44 p-2.5">
+        <mat-icon>save_alt</mat-icon>
+        <input type="submit">
+    </span>
+    </form>
 </div>

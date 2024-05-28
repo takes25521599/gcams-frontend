@@ -34,6 +34,7 @@ export const routes: Routes = [
         children: [
           {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
           {path: 'dashboard', component: AdminDashboardComponent},
+          {path: 'add-users', component: AdminAddUsersComponent},
           {path: 'write', component: AdminWriteComponent},
           {path: 'register', component: AdminRegisterComponent},
         ]
