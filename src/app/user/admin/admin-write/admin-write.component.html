@@ -72,6 +72,8 @@ Write RFID
 class="
 w-full
 text-md
+m-5
+p-5
 flex
 flex-col
 flex-wrap
@@ -83,7 +85,7 @@ md:justify-between
 ">
 
 <label for="student_id" class="block mb-1 text-sm font-bold text-gray-950"
->Student No.</label
+>Student ID</label
 >
 <input
 type="text"
@@ -92,10 +94,23 @@ formControlName="student_id"
 [ngClass]="{
 'border-red-600/60 outline-red-600/60':''
 }"
-class="bg-gray-50/60 rounded-md text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
+class="bg-gray-50/60 rounded-md mb-5 text-gray-950 outline-indigo-600 outline-1 border-[1px] border-gray-100/60 block w-full p-2.5"
 placeholder="2022*****"
 />
-<input type="submit" name="submit" class="button mt-5 p-2.5 w-full">
+
+<span
+class="
+button
+flex
+items-center
+gap-2
+pl-10 pr-5 py-2.5
+mb-5
+md:ml-auto
+">
+<input type="submit" value="Write">
+<mat-icon>arrow_forward</mat-icon>
+</span>
 
 </form>
 
