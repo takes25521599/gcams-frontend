@@ -4,8 +4,7 @@
         <div class="
         px-10
         h-full w-full
-        bg-gradient-to-l from-cyan-700/80 to-green-700/80
-        backdrop-blur-sm
+        bg-gradient-to-r from-orange-300 to-red-500
         border-1
         border-gray-200
         flex 
@@ -26,13 +25,8 @@
             <div class="flex">
             <img class="h-7 ml-8" src="assets/images/GCAMS_LOGO.png" alt="GCAMS logo">
             </div>
-            <div class="hidden sm:block flex">
-            <button class="bg-white text-black font-bold py-1 px-7 rounded-full mr-3 hover:bg-blue-300 active:bg-blue-400">
-            Guide
-            </button>
-            <button class="bg-white text-black font-bold py-1 px-7 rounded-full mr-12 hover:bg-blue-300 active:bg-blue-400">
-            FAQ
-            </button>
+            <div class="text-white text-sm font-semibold hidden sm:block flex items-center">
+                <p class="flex items-center gap-2"><mat-icon>event</mat-icon> {{ app.currDay }} - {{ app.currDate }} - {{ app.currTime }}</p>
             </div>
         </div>
     </div>

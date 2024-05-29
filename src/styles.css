@@ -12,21 +12,21 @@
         @apply 
         text-white 
         bg-gradient-to-br 
-        from-cyan-700
-        to-indigo-600
+        from-orange-400
+        to-red-500
         rounded-full 
         hover:bg-gradient-to-br 
-        hover:from-cyan-800 
-        hover:to-indigo-700
+        hover:from-orange-500 
+        hover:to-red-600
         active:bg-gradient-to-br
-        active:from-cyan-900
-        active:to-indigo-800;
+        active:from-orange-600
+        active:to-red-700;
     }
 }
 
 body {
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
-    background: url('assets/images/bg.jpg') center center no-repeat;
+    background: url('assets/images/bg-new.jpg') center center no-repeat;
     background-size: cover;
 }
 
