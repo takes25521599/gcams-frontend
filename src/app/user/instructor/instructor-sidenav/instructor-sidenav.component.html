@@ -3,16 +3,17 @@
     flex 
     min-h-[calc(100dvh-3rem)]
     max-h-[calc(100dvh-3rem)]
+    bg-emerald-50/40
     ">
         <div class="hidden min-[1024px]:block flex flex-col">
             <div class="
-            bg-white
+            bg-orange-500
             border-r-1 border-white
             shadow-gray-300
             shadow-lg
             rounded-br-3xl
             min-h-full
-            w-60 
+            w-48 
             text-base 
             py-7
             flex 
@@ -29,10 +30,8 @@
             rounded-full
             mb-4"
             src="assets/images/instructoravatar.jpg" alt="AVATAR">
-            <span class="text-black font-bold">Pepito Manaloto</span>
-            <span class="text-black font-bold">Instructor</span>
-            <span class="text-gray-500 text-sm pt-3">{{ time }}</span>
-            <span class="text-gray-500 text-sm">{{ date }} | {{ day }}</span>
+            <span class="text-white font-bold">Pepito Manaloto</span>
+            <span class="text-white font-bold">Instructor</span>
                 <div class="flex flex-col mt-8">
                 <div 
                 class="
@@ -48,14 +47,14 @@
                 gap-2 
                 px-4 py-2
                 text-sm
-                text-gray-500
+                text-white
                 hover:cursor-pointer
                 hover:text-cyan-900
                 focus:outline-none" 
                 routerLink="dashboard" 
                 routerLinkActive="active" 
                 ariaCurrentWhenActive="page">
-                <mat-icon>event</mat-icon>
+                <mat-icon>dashboard</mat-icon>
                 Dashboard
                 </span>
                 <span autofocus [ngClass]="this.router.url === '/menu/instructor/dashboard' ? 
@@ -82,7 +81,7 @@
                 gap-2
                 px-4 py-2
                 text-sm
-                text-gray-500
+                text-white
                 hover:text-cyan-900
                 hover:cursor-pointer
                 focus:outline-none"
@@ -105,12 +104,15 @@
             </div>
             <div class="mt-8 flex flex-col gap-2">
             <button class="
+            text-white
             flex
             justify-self-end 
             items-center 
             gap-2 
             p-3 px-8
-            button">
+            border-t-2
+            border-gray-300
+            ">
             <mat-icon>exit_to_app</mat-icon>
             Log Out
             </button>

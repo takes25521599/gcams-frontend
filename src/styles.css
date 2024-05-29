@@ -22,11 +22,25 @@
         active:from-orange-600
         active:to-red-700;
     }
+    .button2 {
+        @apply 
+        text-white 
+        bg-gradient-to-br 
+        from-lime-400
+        to-emerald-500
+        rounded-full 
+        hover:bg-gradient-to-br 
+        hover:from-lime-500 
+        hover:to-emerald-600
+        active:bg-gradient-to-br
+        active:from-lime-600
+        active:to-emerald-700;
+    }
 }
 
 body {
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
-    background: url('assets/images/bg-new.jpg') center center no-repeat;
+    background: url('assets/images/bg.jpg') center center no-repeat;
     background-size: cover;
 }
 

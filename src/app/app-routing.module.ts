@@ -20,8 +20,6 @@ import { AdminRegisterComponent } from './user/admin/admin-register/admin-regist
 export const routes: Routes = [
   {path: 'menu', component: NavComponent,
     children: [
-      {path: 'instructor', component: InstructorMainComponent,
-        children: [
           {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
           {path: 'dashboard', component: InstructorDashboardComponent},
           {path: 'manage-class', component: InstructorManageClassComponent},
@@ -39,8 +37,6 @@ export const routes: Routes = [
           {path: 'register', component: AdminRegisterComponent},
         ]
       },
-    ]
-  },
 ];
 
 @NgModule({

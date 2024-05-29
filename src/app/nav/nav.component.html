@@ -1,35 +1,158 @@
+<section class="flex min-w-dvh max-w-dvh">
 <section>
-    <div class="max-h-screen">
+    <div class="
+    flex 
+    min-h-dvh
+    max-h-dvh
+    ">
+        <div class="hidden min-[1024px]:block flex flex-col">
+            <div class="
+            bg-orange-500
+            border-r-1 border-white
+            shadow-gray-300
+            shadow-lg
+            rounded-br-3xl
+            min-h-full
+            w-48 
+            text-base 
+            pb-7
+            flex 
+            flex-col 
+            content-center 
+            justify-between 
+            items-center"
+            >
+            <div class="flex flex-col items-center">
+            <img class="h-12 py-2 mr-2 mb-8" src="assets/images/GCAMS_LOGO.png" alt="GCAMS logo">
+            <img class="
+            h-[100px]
+            border-4
+            border-white/60
+            rounded-full
+            mb-4"
+            src="assets/images/instructoravatar.jpg" alt="AVATAR">
+            <span class="text-white font-bold">Pepito Manaloto</span>
+            <span class="text-white text-sm">Instructor</span>
+                <div class="flex flex-col mt-8">
+                <div 
+                class="
+                flex
+                items-center
+                ">
+                <span autofocus 
+                class="
+                flex 
+                items-center 
+                w-full
+                gap-2 
+                px-4 py-2
+                text-sm
+                text-white
+                hover:cursor-pointer
+                hover:text-cyan-900
+                focus:outline-none" 
+                routerLink="dashboard" 
+                routerLinkActive="active" 
+                ariaCurrentWhenActive="page">
+                <mat-icon>dashboard</mat-icon>
+                Dashboard
+                </span>
+                <span autofocus 
+                class="
+                w-4
+                ml-auto
+                h-[35%]
+                rounded-full">
+                </span>
+                </div>
+                <div 
+                class="
+                flex
+                items-center
+                ">
+                <span 
+                class="
+                flex 
+                items-center 
+                w-full
+                gap-2
+                px-4 py-2
+                text-sm
+                text-white
+                hover:text-cyan-900
+                hover:cursor-pointer
+                focus:outline-none"
+                routerLink="manage-class"
+                routerLinkActive="active" 
+                ariaCurrentWhenActive="page">
+                <mat-icon>folder_open</mat-icon>
+                Manage Class
+                </span>
+                <span autofocus
+                class="
+                w-4
+                ml-auto
+                h-[35%]
+                rounded-full">
+                </span>
+                </div>
+                </div>
+            </div>
+            <div class="mt-8 flex flex-col gap-2">
+            <button class="
+            text-white
+            flex
+            justify-self-end 
+            items-center 
+            gap-2 
+            p-3 px-8
+            border-t-2
+            border-gray-300
+            ">
+            <mat-icon>exit_to_app</mat-icon>
+            Log Out
+            </button>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="
+flex flex-col
+object-contain 
+max-h-dvh
+w-full
+bg-emerald-50/40 
+overflow-auto">
+<div class="max-h-screen">
     <div class="h-12">
         <div class="
-        px-10
+        px-4
         h-full w-full
-        bg-gradient-to-r from-orange-300 to-red-500
+        bg-white
         border-1
         border-gray-200
         flex 
         justify-between 
         items-center">
-            <div class="sm:hidden flex">
+            <div class="flex">
             <button>
             <mat-icon 
             class="
             text-2xl 
-            text-white 
+            text-gray-400 
             hover:text-slate-300"
             >
-            menu
+            chevron_right
             </mat-icon>
             </button>
             </div>
-            <div class="flex">
-            <img class="h-7 ml-8" src="assets/images/GCAMS_LOGO.png" alt="GCAMS logo">
-            </div>
-            <div class="text-white text-sm font-semibold hidden sm:block flex items-center">
+            <div class="text-gray-400 text-sm font-semibold hidden sm:block flex items-center">
                 <p class="flex items-center gap-2"><mat-icon>event</mat-icon> {{ app.currDay }} - {{ app.currDate }} - {{ app.currTime }}</p>
             </div>
         </div>
     </div>
     </div>
+    <router-outlet></router-outlet>
+</div>
 </section>
-<router-outlet></router-outlet>
